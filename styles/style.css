@@ -46,10 +46,11 @@ nav:hover {
 }
 
 header main {
-  background-image: url(../images/cinema.jpg);
+  background-image: url(../images/noivafrankeinstein.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   height: 92vh;
   min-height: 400px;
 }
