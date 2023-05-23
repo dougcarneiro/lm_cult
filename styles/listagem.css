@@ -27,7 +27,10 @@ h3 p {
     margin-top: 3vw;
     margin-left: 3vw;
     padding: 2vw;
-    font-size: min(30px, 3vw);
+    font-size: 3vw;
+    @media screen and (min-width: 768px) {
+        font-size: 1.5vw;
+      }
   }
   
 .breadcrumb h3 a {
@@ -36,7 +39,10 @@ h3 p {
 }
 
 .material-symbols-outlined {
-    font-size: min(35px, 4.5vw);
+    font-size: 6vw;
+    @media screen and (min-width: 768px) {
+        font-size: 2.3vw;
+      }
 }
 
 .search-form {
@@ -61,19 +67,25 @@ h3 p {
     border: none;
     background-color: black;
     color: white;
-    font-size: 20px;
-    width: min(1000px, 30vw);
+    font-size: 3vw;
+    width: 30vw;
     outline: none;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.5vw;
+      }
 }
 
 .search-form input::placeholder {
-    color: white;
-    font-size: min(30px, 2.8vw);
     font-weight: 600;
 }
 
 .search-form input:not(:placeholder-shown) {
-    font-size: 1em;
+    font-size: 4.3vw;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.5vw;
+      }
 }
 
 .search-form input:focus::placeholder {
@@ -90,10 +102,6 @@ h3 p {
     margin-left: 5px;
 }
 
-.search-form button:focus {
-    border: none;
-    outline: none;
-}
 
 .image-grid {
     display: flex;
@@ -108,7 +116,11 @@ h3 p {
     flex-direction: row;
     margin: 35px;
     box-sizing: border-box;
-    max-width: min(200px, 30vw);
+    max-width: 30vw;
+
+    @media screen and (min-width: 768px) {
+        max-width: 10vw;
+      }
 }
 
 .column img {
