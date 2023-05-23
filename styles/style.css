@@ -4,21 +4,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  transition: 0.4s;
+body{
+  background-color: black;
 }
 
-#assista {
-  color:white;
-  padding: 0.5em;
-  background-color: #5f5f5f;
-  border: 2px solid white;
-  border-radius: 1000px;
-  justify-content: center;
-  align-items: center;
-}
+
+/* NAVBAR */
 
 .logo {
   font-size: 20px;
@@ -31,14 +22,13 @@ nav {
   height: 8vh;
   background-color: #23232e;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav:hover {
+nav:hover{
   transition: 0.5s;
   height: 9vh;
 }
+
 .nav-list li {
   display: inline;
   text-decoration: none;
@@ -46,35 +36,87 @@ nav:hover {
   margin-left: 1.5em;
 }
 
-.nav-list li a:hover{
-  color: #A0A0A0;
+a{
+  text-decoration: none;
+  transition: 0.4s;
+  color:white
+}
+
+
+#assista {
+  color: black;
+  padding: 0.4em;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li a:hover, .logo:hover{
+  color: #868686;
 }
 
 
 
-header main {
+
+
+
+
+/* NOIVA DO FRANK BACKGROUND */
+.background{
   background-image: url(../images/noivafrankeinstein.jpg);
-  opacity: calc(60%);
+  opacity: calc(50%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
   height: 92vh;
   min-height: 400px;
-}
 
-body{
-  background-color: black;
-}
-
-.Home1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 25px;
 }
+
+
+#texto-inicial{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  margin-bottom: 8vh;
+}
+
+
+
+
+/* DESTAQUES */
+
+main {
+  display: block;
+  margin-top: 25px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+
 
 #destaques {
-  padding: 0.2em;
-  border: 2px solid white;
+  padding: 0.3em;
+  border: 1.3px solid white;
   border-radius: 1000px;
+  color: white;
+  background-color: #23232e;
 
+}
+
+.filme{
+  display: flex;
+}
+
+.filme img{
+  height: 47vb;
 }
