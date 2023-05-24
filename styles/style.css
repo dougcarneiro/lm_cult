@@ -60,9 +60,6 @@ a{
 
 
 
-
-
-
 /* NOIVA DO FRANK BACKGROUND */
 .background{
   background-image: url(../images/noivafrankeinstein.jpg);
@@ -87,6 +84,7 @@ a{
   justify-content: center;
   color:white;
   margin-bottom: 8vh;
+
 }
 
 
@@ -95,28 +93,102 @@ a{
 /* DESTAQUES */
 
 main {
-  display: block;
   margin-top: 25px;
   align-items: center;
   justify-items: center;
   text-align: center;
 }
 
+.home{
+  display: flex;
+}
 
 
-#destaques {
+#destaques, #catalogo-botao {
   padding: 0.3em;
   border: 1.3px solid white;
   border-radius: 1000px;
   color: white;
   background-color: #23232e;
-
 }
 
-.filme{
+.filme_destaque{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+
+
+.column {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  box-sizing: border-box;
+  max-width: 30vw;
+  max-height: 50vh;
+  min-height: 50vh;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.column img:hover{
+  opacity: 80%;
+  border: 2px solid white;
+  width: 100%;
+  height: 105%;
+  transition:0.2s;
+}
+
+p{
+  color:white;
+  font-size: 3vh;
+  text-align: left;
+  margin-left:8rem;
+  margin-bottom:4rem;
+}
+
+
+/* Filmes */
+
+.home2{
+  margin-left: 5vh;
+  margin-right: 2vh;
   display: flex;
 }
 
-.filme img{
-  height: 47vb;
+.filmes{
+  display: flex;
+}
+
+
+.catalogo{
+  display: block;
+  font-size: 2em;
+}
+
+#catalogo-botao{
+  
+}
+
+.catalogo p{
+  margin: 1.5em 1em 2em 2em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* MEDIA (CELULAR)*/
+@media (max-width: 882px) {
+  .column img {
+    width: 100%;
+    height: 50%;
+  }
 }
