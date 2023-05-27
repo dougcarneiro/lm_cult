@@ -106,11 +106,11 @@ body, .search-form input, .search-form button  {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2vw 2vw;
+    padding-bottom: 100px;
 
     @media screen and (min-width: 768px) {
         margin: 0 2vw 0 2vw;
     }
-
 
 }
 
@@ -118,6 +118,7 @@ body, .search-form input, .search-form button  {
     width: 100%;
     max-width: 26vw;
     min-width: 40vw;
+    justify-content: center;
     @media screen and (min-width: 768px) {
         max-width: 15vw;
         min-width: 1vw
