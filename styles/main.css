@@ -1,11 +1,13 @@
+@import url("/styles/fonts.css");
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-body{
-  background-color: black;
+body {
+  background-color: rgb(23, 23, 31);
 }
 
 
@@ -14,11 +16,12 @@ body{
 .logo {
   font-size: 20px;
   letter-spacing: 4px;
+  margin-left: 8%;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 8vh;
   background-color: #23232e;
   align-items: center;
@@ -36,7 +39,7 @@ nav:hover{
   margin-left: 1.5em;
 }
 
-a{
+a {
   text-decoration: none;
   transition: 0.4s;
   color:white
@@ -92,7 +95,7 @@ a{
 
 /* DESTAQUES */
 
-main {
+main .Home, main .filme_destaque, main .texto-filmes, main .catalogo{
   margin-top: 25px;
   align-items: center;
   justify-items: center;
@@ -146,7 +149,7 @@ main {
   transition:0.2s;
 }
 
-p{
+p {
   color:white;
   font-size: 3vh;
   text-align: left;
