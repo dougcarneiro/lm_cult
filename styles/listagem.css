@@ -117,8 +117,10 @@ body, .search-form input, .search-form button  {
 .column {
     width: 100%;
     max-width: 26vw;
+    min-width: 40vw;
     @media screen and (min-width: 768px) {
         max-width: 15vw;
+        min-width: 1vw
     }
    
 }
