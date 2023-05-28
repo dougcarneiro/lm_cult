@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMCULT - Filmes</title>
-    <link rel="stylesheet" href="./styles/listagem.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/filme.css"/>
     <link rel="icon" href="./images/icon/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+    <title>LMCULT - Título</title>
+</head>
+<body>
     <header class="header">
-      <div>
-        <nav id="menu">
-          <a class="logo" href="/index.html">LMCULT</a>
-          <ul class="nav-list">
-            <li><a id="generos" href="#">Gêneros</a></li>
-            <li><a id="pesquisa" href="#">Barra de Pesquisa</a></li>
-            <li><a id="assista"href="/listagem.html">Assista Agora</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <div>
+          <nav id="menu">
+            <a class="logo" href="./index.html">LMCULT</a>
+            <ul class="nav-list">
+              <li><a id="generos" href="#">Gêneros</a></li>
+              <li><a id="pesquisa" href="#">Barra de Pesquisa</a></li>
+              <li><a id="assista"href="./listagem.html">Assista Agora</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <main>
         <section class="search-breadcrumb">
             <section class="breadcrumb">
                 <h3>
-                    <a href="./index.html">Home</a>  >> Filmes
+                    <a href="./index.html">Home</a>
+                      >> <a href="./listagem.html">Filmes</a> >> Título Filme
                 </h3>
             </section>
             <section>
@@ -39,7 +40,52 @@
                     </form>              
             </section>
         </section>
-        <section class="image-grid">
+        <div class="movie-container">
+            <div class="left-half">
+                <section class="details"></section>
+                    <h3>Título</h2>
+                    <h2>Classificação Indicativa: 13
+                    </h2>
+                    <h2>Duração: 2h19min
+                    </h2>
+                    <h2>Diretor: Stanley Kubrick
+                    </h2>
+                    <h2>Elenco
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </h2>
+                    <h2>Sinopse
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </h2>
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <td class="silver">STREAM</td>
+                    <td>
+                        <span class="icons netflix-icon"></span>
+                    </td>
+                    <td><span class="icons prime-icon"></span></td>
+                    <td><span class="icons hbo-icon"></span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="blue">ALUGAR</td>
+                    <td><span class="icons prime-icon"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="gold">COMPRAR</td>
+                    <td><span class="icons prime-icon"></span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="right-half">
+              <img src="./images/noivafrankeinstein.jpg" alt="Imagem">
+            </div>
+          </div>
+          <div class="video-container">
+            <iframe class='trailer' src="https://www.youtube.com/embed/ZZ5LpwO-An4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <section class="image-grid">
             <div class="column">
               <div class="image-container">
                 <a href="./detalhes_filme.html">
@@ -188,7 +234,7 @@
                 <img src="images/filmes/nosferatu.jpg" alt="Nosferatu">
               </div>
             </div>
-          </section>
+          </section>         
     </main>
   </body>
 </html>
