@@ -10,26 +10,41 @@ body {
   background-color: rgb(23, 23, 31);
 }
 
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  color:white
+}
+
+p {
+
+  font-size: 2.5vh;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
 
 /* NAVBAR */
 
-.logo {
-  font-size: 20px;
-  letter-spacing: 4px;
-  margin-left: 8%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
+#menu{
+  position: fixed;
+  width: 100%;
   height: 8vh;
   background-color: #23232e;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 nav:hover{
   transition: 0.5s;
-  height: 9vh;
+  height: 8.5vh;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-left: 8%;
 }
 
 .nav-list li {
@@ -39,72 +54,44 @@ nav:hover{
   margin-left: 1.5em;
 }
 
-a {
-  text-decoration: none;
-  transition: 0.4s;
-  color:white
+.nav-list li a:hover, .logo:hover{
+  color: #868686;
 }
 
-
 #assista {
-  color: black;
+  background-color: black;
   padding: 0.4em;
-  background-color: white;
   border: 2px solid white;
   border-radius: 1000px;
   justify-content: center;
   align-items: center;
 }
 
-.nav-list li a:hover, .logo:hover{
-  color: #868686;
-}
+/*#assista:hover {}*/
 
-
-
-
-/* NOIVA DO FRANK BACKGROUND */
+/* BACKGROUND */
 .background{
+  display: flex;
   background-image: url(../images/noivafrankeinstein.jpg);
-  opacity: calc(50%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
-  height: 92vh;
-  min-height: 400px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: 80vh;
 }
-
-
-#texto-inicial{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color:white;
-  margin-bottom: 8vh;
-
-}
-
 
 
 
 /* DESTAQUES */
 
-main .Home, main .filme_destaque, main .texto-filmes, main .catalogo{
+main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao{
   margin-top: 25px;
   align-items: center;
   justify-items: center;
   text-align: center;
 }
 
-.home{
-  display: flex;
-}
+
 
 
 #destaques, #catalogo-botao {
@@ -115,83 +102,109 @@ main .Home, main .filme_destaque, main .texto-filmes, main .catalogo{
   background-color: #23232e;
 }
 
-.filme_destaque{
+
+
+
+
+.filme_destaque, .filmes{
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 150px;
 }
 
 
-
-.column {
-  display: flex;
-  flex-direction: row;
-  margin: 5px;
-  box-sizing: border-box;
-  max-width: 30vw;
-  max-height: 50vh;
-  min-height: 50vh;
+.image-container {
+  flex: 1;
 }
 
-.column img {
-    width: 100%;
-    height: 100%;
+.image-container img {
+  max-width: 100%;
+  height: auto;
   border: 2px solid transparent;
   border-radius: 10px;
-  object-fit: cover;
 }
 
-.column img:hover{
+.image-container img:hover{
   opacity: 80%;
-  border: 2px solid white;
-  width: 100%;
-  height: 105%;
-  transition:0.2s;
+  border-color: white;
 }
 
-p {
-  color:white;
-  font-size: 3vh;
-  text-align: left;
-  margin-left:8rem;
-  margin-bottom:4rem;
+.column {
+  margin: 5px;
 }
+
+
+
+
+
+
+
 
 
 /* Filmes */
 
-.home2{
-  margin-left: 5vh;
-  margin-right: 2vh;
-  display: flex;
-}
-
 .filmes{
+  margin-left: 1em;
+  margin-right: 1em;
   display: flex;
 }
 
+.localizacao{
+  padding-bottom: 1150px;
+}
 
-.catalogo{
+#local{
+
+}
+
+/*antigo codigo do catalogo.catalogo{
   display: block;
   font-size: 2em;
 }
 
-#catalogo-botao{
-  
-}
 
 .catalogo p{
-  margin: 1.5em 1em 2em 2em;
+  margin: 1.5em 2em 1.5em 2em;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
+#catalogo-botao{
+  margin: 1.5em 1em 1.5em 1em
+}
+*/
 
 /* MEDIA (CELULAR)*/
 @media (max-width: 882px) {
   .column img {
     width: 100%;
     height: 50%;
+  }
+  .nav-list li {
+    margin-right: 1em;
+    margin-left: 0.5em;
+  }
+
+  .catalogo{
+    font-size: 1.5em;
+  }
+
+  #catalogo-botao{
+    margin: 1.5em 0em 1.5em 0em
+  }
+
+  .filme_destaque{
+    margin-bottom: 0px;
+  }
+
+
+
+@media (max-width: 1200px) {
+
+  .catalogo{
+    font-size: 1.5em;
+  }
+
+  #catalogo-botao{
+    margin: 1.5em 0em 1.5em 0em
   }
 }
