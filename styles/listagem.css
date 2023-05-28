@@ -2,12 +2,17 @@
 @import url("../styles/icons.css");
 
 
-.search-breadcrumb{
+.search-breadcrumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+      }
 }
-  
+
 body, .search-form input, .search-form button  {
     background-color: #17171F;
 }
@@ -31,6 +36,7 @@ body, .search-form input, .search-form button  {
 
 .material-symbols-outlined {
     font-size: 5vw;
+    margin-top: 5px;
     @media screen and (min-width: 768px) {
         font-size: 2.3vw;
       }
@@ -53,7 +59,7 @@ body, .search-form input, .search-form button  {
     @media screen and (min-width: 768px) {
         outline: .3vw solid white;
         border-radius: 2.8vw;
-        outline-offset: -1vw;
+        outline-offset: -1.5vw;
       }
     
 }
@@ -183,7 +189,7 @@ body, .search-form input, .search-form button  {
     .search-form:focus-within, .search-form:hover {
         outline: .3vw solid white;
         border-radius: 2.8vw;
-        outline-offset: -1vw;
+        outline-offset: -1.5vw;
     }
 
     .image-grid {
