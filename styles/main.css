@@ -34,6 +34,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
 }
 
 nav:hover{
@@ -195,6 +196,7 @@ main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao
   .filme_destaque{
     margin-bottom: 0px;
   }
+}
 
 
 
