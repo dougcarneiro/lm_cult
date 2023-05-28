@@ -143,7 +143,6 @@ body, .search-form input, .search-form button  {
 
 .image-container {
     position: relative;
-    /* flex: 1; */
 }
 
 .image-overlay {
