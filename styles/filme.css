@@ -114,10 +114,6 @@ body, .search-breadcrumb {
     background-color: #D3CA78;
 }
   
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
 
 .netflix-icon {
     content: url('https://api.iconify.design/ri/netflix-fill.svg?color=%23454444');
