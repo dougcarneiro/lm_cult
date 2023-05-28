@@ -1,6 +1,5 @@
 @import url("./main.css");
 @import url("./listagem.css");
-@import url("./icons.css");
 
 
 body, .search-breadcrumb {
@@ -63,7 +62,6 @@ body, .search-breadcrumb {
     background-image: linear-gradient(to right, rgb(23, 23, 31, 0.9), transparent);
 }
 
-
 .table-container {
     margin: 100px;
     background-color: #23232e;
@@ -71,29 +69,29 @@ body, .search-breadcrumb {
     width: fit-content;
 }
 
-table {
+.table-container table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px;
 }
 
-table span {
+.table-container table span {
     margin-left: 20px;
 }
 
-table td {
+.table-container table td {
     text-align: start;
     padding: 2px;
     border: none;
     font-weight: 400;
 }
 
-table tr {
+.table-container table tr {
     margin-left: 1000px;
     width: 10px;
 }
 
-table td:first-child {
+.table-container table td:first-child {
     padding: 10px;
     width: 100%;
 }
