@@ -18,10 +18,15 @@ a {
 }
 
 p {
+  color:white;
   font-size: 2.5vh;
   text-align: left;
   margin-left: 50px;
   margin-bottom: 25px;
+}
+
+h1 {
+  color:white;
 }
 
 /* NAVBAR */
@@ -146,16 +151,70 @@ main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao
 .filmes{
   margin-left: 1em;
   margin-right: 1em;
-  display: flex;
+  display: flex
 }
 
 .localizacao{
-  padding-bottom: 1150px;
+  padding-bottom: 50px;
+  display:inline-block;
+  margin: 25px;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
 }
 
-#local{
+.localizacao p{
+  margin-left: 25em;
+  margin-right: 25em;
+}
+
+
+footer{  
+  background-color: #23232e;
+  text-decoration: none;
+}
+
+footer .footer-content{
+  display: flex;
+  text-align: center;
+}
+
+footer .footer-content > section{
+  flex-basis: calc(100%/3);
+  display: block;
+  margin-block-start: 1em;
+  
+}
+
+footer .footer-content .sobre h1{
+  font-size: 1em;
+  margin-block-end: 0.5em
+}
+footer .footer-content .sobre p{
+  font-size: 1em;
 
 }
+
+footer .footer-content .copyright{
+  margin-block-start: 2em;
+}
+
+
+.lista-icon{
+  display: inline-flex;
+}
+.lista-icon li{
+  margin: 0.5em;
+  font-size: 1.5em;
+  color: white
+}
+
+ul{
+  list-style: none;
+}
+
+
+/* Filmes */
 
 /*antigo codigo do catalogo.catalogo{
   display: block;
@@ -173,31 +232,7 @@ main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao
 #catalogo-botao{
   margin: 1.5em 1em 1.5em 1em
 }
-*/
 
-/* MEDIA (CELULAR)*/
-@media (max-width: 882px) {
-  .column img {
-    width: 100%;
-    height: 50%;
-  }
-  .nav-list li {
-    margin-right: 1em;
-    margin-left: 0.5em;
-  }
-
-  .catalogo{
-    font-size: 1.5em;
-  }
-
-  #catalogo-botao{
-    margin: 1.5em 0em 1.5em 0em
-  }
-
-  .filme_destaque{
-    margin-bottom: 0px;
-  }
-}
 
 
 
@@ -211,3 +246,39 @@ main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao
     margin: 1.5em 0em 1.5em 0em
   }
 }
+
+
+  .catalogo{
+    font-size: 1.5em;
+  }
+  
+MEDIA (CELULAR)
+@media (max-width: 882px) {
+  #catalogo-botao{
+    margin: 1.5em 0em 1.5em 0em
+  }
+*/
+
+
+
+
+
+/* MEDIA (CELULAR)*/
+
+@media screen and (max-width: 882px) {
+  .column img {
+    width: 100%;
+    height: 50%;
+  }
+  .nav-list li {
+    margin-right: 1em;
+    margin-left: 0.5em;
+  }
+
+  .filme_destaque{
+    margin-bottom: 0px;
+  }
+}
+
+
+
