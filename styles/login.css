@@ -1,6 +1,5 @@
 
 * {
-
     font-family: 'Montserrat', sans-serif;
 }
   
@@ -21,15 +20,22 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 13em;
+    @media screen and (max-width: 500px) {
+        margin: 10em;
+    }
 }
 
 
+
+
 div{
-    margin-top: 28vh;
     background-color: black;
     border-radius: 15px;    
     padding:50px 80px 100px;
-
+    @media screen and (max-width: 500px) {
+        padding:25px 40px 50px;
+    }
 }
 
 h1{
