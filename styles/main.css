@@ -239,5 +239,9 @@ ul{
   list-style: none;
 }
 
+.contact li:hover, .copyright h1:hover{
+  color: #868686;;
+
+}
 
 
