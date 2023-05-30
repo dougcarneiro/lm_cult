@@ -31,6 +31,7 @@ h1 {
 
 /* NAVBAR */
 
+
 #menu{
   position: fixed;
   width: 100%;
@@ -59,11 +60,15 @@ nav:hover{
   text-decoration: none;
   margin-right: 2em;
   margin-left: 1.5em;
+  @media screen and (max-width: 500px) {
+    margin-right:0
+  }
 }
 
 .nav-list li a:hover, .logo:hover{
   color: #868686;
 }
+
 
 #assista {
   background-color: black;
@@ -72,43 +77,58 @@ nav:hover{
   border-radius: 1000px;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    display:none
+  }
 }
 
-/*#assista:hover {}*/
 
 /* BACKGROUND */
 .background{
-  display: flex;
   background-image: url(../images/noivafrankeinstein.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
-  height: 80vh;
+  height: 80vh;  
+  @media screen and (max-width: 500px) {
+    height:40vh;
+    background-attachment: none;
+
+  }
 }
 
 
 
 /* DESTAQUES */
+main{
+  width: 100vw;
+  
+}
 
-main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao{
+main .Home, main .filme_destaque, main.texto, main .localizacao, .footer-content{
   margin-top: 25px;
   align-items: center;
   justify-items: center;
   text-align: center;
+  @media screen and (max-width: 500px) {
+    font-size:0.8em;
+  }
 }
 
+main .texto p{
+  margin-top:10px
+}
 
+/* Filmes Destaques */
 
-
-#destaques, #catalogo-botao {
+#destaques {
   padding: 0.3em;
   border: 1.3px solid white;
   border-radius: 1000px;
   color: white;
   background-color: #23232e;
 }
-
 
 
 
@@ -140,34 +160,39 @@ main .Home, main .filme_destaque, main .texto, main .catalogo, main .localizacao
 
 
 
-
-
-
-
-
-
 /* Filmes */
 
 .filmes{
   margin-left: 1em;
   margin-right: 1em;
-  display: flex
+  display: flex;
+  @media screen and (max-width: 500px) {
+    padding-bottom: 30px;
+  }
+}
+
+/* Localizacao */
+
+#texto{
+  padding-left: 20vw;
 }
 
 .localizacao{
+  display: block;
+  padding-top: 50px;
   padding-bottom: 50px;
-  display:inline-block;
   margin: 25px;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
-
 .localizacao p{
-  margin-left: 25em;
-  margin-right: 25em;
+  margin-left: 15em;
+  margin-right: 15em;
 }
 
+
+/* Footer */
 
 footer{  
   background-color: #23232e;
@@ -192,13 +217,12 @@ footer .footer-content .sobre h1{
 }
 footer .footer-content .sobre p{
   font-size: 1em;
+  @media screen and (max-width: 500px) {
+    font-size: 0.8em;
+    margin-left: 0.5em;
 
+  }
 }
-
-footer .footer-content .copyright{
-  margin-block-start: 2em;
-}
-
 
 .lista-icon{
   display: inline-flex;
@@ -211,73 +235,6 @@ footer .footer-content .copyright{
 
 ul{
   list-style: none;
-}
-
-
-/* Filmes */
-
-/*antigo codigo do catalogo.catalogo{
-  display: block;
-  font-size: 2em;
-}
-
-
-.catalogo p{
-  margin: 1.5em 2em 1.5em 2em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-#catalogo-botao{
-  margin: 1.5em 1em 1.5em 1em
-}
-
-
-
-
-@media (max-width: 1200px) {
-
-  .catalogo{
-    font-size: 1.5em;
-  }
-
-  #catalogo-botao{
-    margin: 1.5em 0em 1.5em 0em
-  }
-}
-
-
-  .catalogo{
-    font-size: 1.5em;
-  }
-  
-MEDIA (CELULAR)
-@media (max-width: 882px) {
-  #catalogo-botao{
-    margin: 1.5em 0em 1.5em 0em
-  }
-*/
-
-
-
-
-
-/* MEDIA (CELULAR)*/
-
-@media screen and (max-width: 882px) {
-  .column img {
-    width: 100%;
-    height: 50%;
-  }
-  .nav-list li {
-    margin-right: 1em;
-    margin-left: 0.5em;
-  }
-
-  .filme_destaque{
-    margin-bottom: 0px;
-  }
 }
 
 
