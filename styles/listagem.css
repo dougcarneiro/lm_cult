@@ -1,5 +1,4 @@
 @import url("./main.css");
-@import url("./icons.css");
 
 
 .search-container {
@@ -111,7 +110,6 @@ body, .search-form input, .search-form button  {
     max-width: 20vw;
     justify-content: center;
     @media screen and (min-width: 768px) {
-        max-width: 15vw;
         min-width: 1vw
     }
 }
