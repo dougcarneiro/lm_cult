@@ -83,6 +83,16 @@ nav:hover{
   }
 }
 
+.fa-solid fa-user{
+  font-size: 1em;
+  color: white;
+}
+
+#user{
+  margin-right: 1em;
+}
+
+
 
 /* BACKGROUND */
 .background{
