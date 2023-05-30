@@ -9,6 +9,7 @@
 
 body {
   background-color: rgb(23, 23, 31);
+  overflow-x: hidden;
 }
 
 a {
