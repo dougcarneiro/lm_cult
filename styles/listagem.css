@@ -8,7 +8,7 @@
     padding-top: 50px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 60px;
+        padding-top: 80px;
       }
 }
 
@@ -28,9 +28,13 @@ body, .search-form input, .search-form button  {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 2vw;
+    margin-top: 6vw;
     margin-right: 3vw;
     padding: 2vw;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 2vw;
+      }
 }
 
 .search-form:focus-within, .search-form:hover {
