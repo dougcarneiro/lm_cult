@@ -79,7 +79,7 @@ body, .search-container {
 }
 
 .table-container {
-    margin-left: 5vw;
+    margin: 5vw;
     display: flex;
     justify-items: center;
     overflow-x: none;
