@@ -9,7 +9,7 @@ body, .search-container {
     position: relative;
     margin-bottom: 7vw;
     display: flex;
-    height: 118vh;
+    height: fit-content;
 }
 
 .left-half {
@@ -242,7 +242,7 @@ body, .search-container {
     height: 37vw;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 700px) {
     .movie-container {
         height: auto;
         max-width: 100px;
