@@ -17,11 +17,19 @@ body, .search-container {
     margin-left: 20px;
 }
 
+.movie-poster {
+    display: flex;
+    justify-content: center;
+    overflow-x: none;
+    top: 0;
+    left: 0;
+}
+
 .background-image {
-    width: 100%;
+    width: 100vw;
     display: none;
     position: relative;
-    margin-left: 7vw;
+    overflow-x: none;
 }
 
 .left-half p, .left-half h2 {
@@ -71,38 +79,35 @@ body, .search-container {
 }
 
 .table-container {
+    margin-left: 5vw;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 350px;
-    margin-left: 6vw;
+    justify-items: center;
+    overflow-x: none;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    max-width: max-content;
     background-color: #23232e;
 }
 
-.table-container table {
+.icons-table {
     border-collapse: collapse;
-    margin: 20px;
-    align-content: center;
 }
 
-.table-container table span {
-    margin-left: 20px;
+.icons-table span {
+    margin: 15px;
 }
 
-.table-container table td {
+.icons-table td {
     text-align: start;
     padding: 2px;
     border: none;
     font-weight: 400;
 }
 
-.table-container table tr {
-    margin-left: 1000px;
-    width: 10px;
-}
 
-.table-container table td:first-child {
-    padding: 10px;
+.icons-table td:first-child {
+    padding: 20px;
     width: 100%;
 }
 
@@ -201,6 +206,7 @@ body, .search-container {
     .background-image {
         display: block;
         margin-bottom: 10vw;
+        justify-content: end;
     }
 
     .left-half h3 {
@@ -227,5 +233,11 @@ body, .search-container {
         width: 90vw;
         height: 35vh;
         align-self: center
+    }
+
+    .table-container {
+        padding: 8px;
+        max-width: max-content;
+        margin: auto;
     }
 }
