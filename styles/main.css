@@ -112,6 +112,7 @@ nav:hover{
     height: 40vh;
     background-size: cover;
     background-position: center center;
+    background-attachment: local;
   }
 }
 
