@@ -104,13 +104,13 @@ nav:hover{
   background-image: url(../images/noivafrankeinstein.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: sticky;
-  background-position: center center;
-  height: 80vh;  
+  background-attachment: fixed;
+  background-position: top;
+  height: 80vh;
+
   @media screen and (max-width: 500px) {
     height:40vh;
     background-attachment: none;
-    background-size: contain;
   }
 }
 
