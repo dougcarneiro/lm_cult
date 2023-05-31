@@ -21,7 +21,7 @@ body, .search-container {
     width: 100%;
     display: none;
     position: relative;
-    margin: 0 7vw 0 7vw;
+    margin-left: 7vw;
 }
 
 .left-half p, .left-half h2 {
@@ -136,6 +136,30 @@ body, .search-container {
 .hbo-icon {
     content: url('https://api.iconify.design/arcticons/hbo-max.svg?color=%23454444');
  }
+
+ .apple-tv-icon {
+    content: url('https://api.iconify.design/simple-icons/appletv.svg?color=%23454444');
+ }
+
+ .youtube-icon {
+    content: url('https://api.iconify.design/fa/youtube.svg?color=%23454444');
+ }
+
+ .star-plus-icon {
+    content: url('https://api.iconify.design/mdi/star-outline.svg?color=%23454444');
+ }
+
+ .disney-plus-icon {
+    content: url('https://api.iconify.design/tabler/brand-disney.svg?color=%23454444');
+ }
+
+.paramount-icon {
+    content: url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23454444');
+}
+
+.google-play-icon {
+    content: url('https://api.iconify.design/uim/google-play.svg?color=%23454444');
+}
 
 .icons {
     padding: 5px;
