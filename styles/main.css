@@ -105,7 +105,7 @@ nav:hover{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   height: 80vh;
 
   @media screen and (max-width: 500px) {
