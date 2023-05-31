@@ -137,43 +137,95 @@ body, .search-container {
     color: #454444;
 }
 
+
+
+.imdb-icon {
+    content: url('https://api.iconify.design/bxl/imdb.svg?color=%23d3ca78');
+    width: 75px;
+    float: right;
+    margin-right: 5vw;
+}
+
+.imdb-icon:hover {
+    content: url('https://api.iconify.design/bxl/imdb.svg?color=%23d9d9d9');
+} 
+
 .netflix-icon {
     content: url('https://api.iconify.design/ri/netflix-fill.svg?color=%23454444');
+}
+
+.netflix-icon:hover {
+    content: url('https://api.iconify.design/ri/netflix-fill.svg?color=%23d9d9d9');
 }
 
 .prime-icon {
     content: url('https://api.iconify.design/arcticons/amazon-prime-video.svg?color=%23454444');
  }
 
+ .prime-icon:hover {
+    content: url('https://api.iconify.design/arcticons/amazon-prime-video.svg?color=%23d9d9d9');
+ }
+
 .hbo-icon {
     content: url('https://api.iconify.design/arcticons/hbo-max.svg?color=%23454444');
+ }
+
+ .hbo-icon:hover {
+    content: url('https://api.iconify.design/arcticons/hbo-max.svg?color=%23d9d9d9');
  }
 
  .apple-tv-icon {
     content: url('https://api.iconify.design/simple-icons/appletv.svg?color=%23454444');
  }
 
+ .apple-tv-icon:hover {
+    content: url('https://api.iconify.design/simple-icons/appletv.svg?color=%23d9d9d9');
+ }
+
  .youtube-icon {
-    content: url('https://api.iconify.design/fa/youtube.svg?color=%23454444');
     height: 45px;
+    content: url('https://api.iconify.design/fa/youtube.svg?color=%23454444');
+ }
+
+ .youtube-icon:hover {
+    content: url('https://api.iconify.design/fa/youtube.svg?color=%23d9d9d9');
  }
 
  .star-plus-icon {
     content: url('https://api.iconify.design/mdi/star-outline.svg?color=%23454444');
  }
 
+ .star-plus-icon:hover {
+    content: url('https://api.iconify.design/mdi/star-outline.svg?color=%23d9d9d9');
+ }
+
  .disney-plus-icon {
     content: url('https://api.iconify.design/tabler/brand-disney.svg?color=%23454444');
+ }
+
+ .disney-plus-icon:hover {
+    content: url('https://api.iconify.design/tabler/brand-disney.svg?color=%23d9d9d9');
  }
 
 .paramount-icon {
     content: url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23454444');
 }
 
+.paramount-icon:hover {
+    content: url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23d9d9d9');
+}
+
 .google-play-icon {
     content: url('https://api.iconify.design/uim/google-play.svg?color=%23454444');
 }
 
+.google-play-icon:hover {
+    content: url('https://api.iconify.design/uim/google-play.svg?color=%23d9d9d9');
+}
+
+.netflix-icon:hover, .prime-icon:hover, .hbo-icon:hover, .apple-tv-icon:hover, .youtube-icon:hover, .star-plus-icon:hover, .disney-plus-icon:hover, .paramount-icon:hover, .google-play-icon:hover {
+    background-color: #17171F;
+}
 
 .video-container{
     display: flex;
@@ -239,5 +291,10 @@ body, .search-container {
         padding: 8px;
         max-width: max-content;
         margin: auto;
+    }
+
+    .imdb-icon {
+        width: 12vw;
+        margin-right: 9vw;
     }
 }
