@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/fonts.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/icons.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="icon" href="./images/icon/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    backgroundColor: {
+                        'overlay-grid': 'rgba(23, 23, 31, 0.5)',
+                        'rgb-23-23-31': 'rgb(23, 23, 31)',
+                        },
+                       
+                },
+            fontFamily: {
+                amatica: ["Amatic SC", "cursive"],
+                montserrat: ["Montserrat", "sans-serif"]
+            },
+            },
+            corePlugins: {
+            preflight: false,
+            },
+    };
+    </script>
+    <style>
+        .zoom:hover img {
+        transform: scale(1.1);
+        }
+    </style>
+    <title>LMCULT - Filmes</title>
+</head>
+<body class="bg-rgb-23-23-31">
+    <section id="main-container" class="container my-24 mx-auto md:px-6 bg-background-color">
+        
+          <section id="search-bar" class="mb-3 flex justify-center lg, md:justify-end">
+            <div class="relative mb-4 p-3 pl-5 pr-5 rounded-2xl border-2 border-transparent focus-within, hover:border-2 focus-within, hover:border-white">
+                <div class="rounded-2x">
+                    <div class="flex">
+                        <input
+                        type="search"
+                        class="outline-none block w-auto min-w-30px bg-transparent font-montserrat text-white transition duration-200 ease-in-out focus:z-[3] focus:text-white"
+                        placeholder="Buscar por filme"
+                        aria-label="Buscar por filme"/>
+                        <button>
+                            <span class="material-symbols-outlined text-white text-3xl ml-3">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+          </section id="search-bar">
+        <section id="movie-container" class="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Em Busca do Ouro
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/frankstein_noiva.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Noiva de Frankenstein
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/king_kong.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                King Kong
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/living_dead.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Noite dos Mortos Vivos
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/loja_dos_horrores.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Loja dos Horrores
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/marca_do_zorro.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Marca do Zorro
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/metropolis.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Metropolis
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/nosferatu.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Nosferatu
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/o_gabinete_do_dr_caligari.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                O Gabinete do Dr. Caligari
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/the_kid.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                The Kid
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Em Busca do Ouro
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/frankstein_noiva.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Noiva de Frankenstein
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/king_kong.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                King Kong
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/living_dead.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Noite dos Mortos Vivos
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/loja_dos_horrores.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Loja dos Horrores
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/marca_do_zorro.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                A Marca do Zorro
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/metropolis.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Metropolis
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/nosferatu.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                Nosferatu
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/o_gabinete_do_dr_caligari.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                O Gabinete do Dr. Caligari
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%] flex-auto" data-te-ripple-init data-te-ripple-color="dark">
+                <img src="./images/filmes/the_kid.jpg" class="align-middle transition duration-300 ease-linear">
+                <a href="./filme.html">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                        <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                            <div class="flex h-full items-end justify-center">
+                                <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                                The Kid
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section">
+</body>
+</html>
