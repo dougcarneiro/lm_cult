@@ -41,24 +41,25 @@
     <header class="header">
       <div>
         <nav id = "menu" class="fixed w-full h-[8vh] bg-[#23232e] flex justify-between items-center z-[9999]">
-          <a class="text-3xl tracking-[4px] ml-[8%] font-Amatic SC, cursive" href="./index.html">LMCULT</a>
+          <a class="text-3xl tracking-[4px] ml-[8%] font-Amatic SC, cursive hover:text-[#868686]" href="./index.html">LMCULT</a>
           <ul class="nav-list">
-            <li class = 'inline no-underline ml-[1.5em] mr-[2em]'><a class= "no-underline text-white transition-[0.4s]" id="generos" href="#">Gêneros</a></li>
-            <li class = 'inline no-underline ml-[1.5em] mr-[2em]'><a class= "no-underline text-white transition-[0.4s]" id="login" href="./login.html">Login</a></li>
-            <li class = 'inline no-underline ml-[1.5em] mr-[2em]'><a class= "no-underline text-white transition-[0.4s]" id="assista"href="./listagem.html">Assista Agora</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 md:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="#">Gêneros</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 md:mr-[-1.5em]' ><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html"><i class="fa-solid fa-user text-white hover:text-[#868686]"></i></a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 md:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 md:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686] bg-[black] justify-center items-center p-[0.4em] rounded-[1000px] border-2 border-solid border-[white]" id="assista"href="./listagem.html">Assista Agora</a></li>
           </ul>
         </nav>
       </div>
-      <section class="bg-[url(../images/movie-4708211\_1280.jpg)] bg-cover bg-no-repeat bg-fixed bg-center h-[80vh]">
+      <section class="h-[40vh] bg-cover bg-[center_center] bg-local sm:bg-[url(../images/movie-4708211\_1280.jpg)] bg-cover bg-no-repeat bg-fixed bg-center h-[80vh]">
       </section>  
     </header>
 
     <main class = "w-screen">
-      <section class="Home">
+      <section class="items-center justify-items-center text-center mt-[25px]">
         <a href="./listagem.html" class="text-white text-2xl bg-[#23232e] p-[0.3em] rounded-[1000px] border-[1.3px] border-solid border-[white] ">DESTAQUES</a>
       </section>
       
-      <section class="flex">
+      <section class="flex items-center justify-items-center text-center mt-[25px]">
         <div class="flex-1">
           <div class="flex-[0_0_25%] m-[5px]">
             <a href="./filme.html">
@@ -98,11 +99,11 @@
       </section>
 
 
-      <section class="texto">
+      <section class="texto items-center justify-items-center text-center mt-[25px]">
         <p class="text-white text-3xl m-8 mt-2.5">Filmes</p>
       </section>
 
-      <section id="movie-container" class="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <section id="movie-container" class="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
         <div id="movie-card" class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto" data-te-ripple-init data-te-ripple-color="dark">
             <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear">
             <a href="./filme.html">
@@ -175,7 +176,7 @@
           </div>
       </section>
 
-      <section class="localizacao">
+      <section class="localizacao items-center justify-items-center text-center mt-[25px]">
         <p class= "text-white text-3xl m-8">Onde nos Encontrar</p>
         <iframe  class="center m-auto" id = "local" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7302542202355!2d-34.87406193016357!3d-7.135132200203973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1685252561020!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class= "text-white text-2xl m-8">Endereço: Av. Primeiro de Maio, 720 - Jaguaribe, João Pessoa - PB, 58015-435</p>
@@ -183,7 +184,7 @@
     </main>
 
     <footer>
-      <section class="footer-content">
+      <section class="footer-content items-center justify-items-center text-center mt-[25px]">
         <section class="sobre">
           <h1 class="text-[white]">SOBRE NÓS</h1>
           <p  class="text-white text-2xl">Nós somos um serviço que te ajuda a encontrar o melhor site para assistir seu filme!</p>
