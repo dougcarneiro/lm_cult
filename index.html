@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/fonts.css" rel="stylesheet"/>
     <link rel ="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
     <link rel="icon" href="./images/icon/favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
@@ -18,6 +19,10 @@
                         'overlay-grid': 'rgba(23, 23, 31, 0.7)',
                         },
                     
+                },
+                fontFamily: {
+                    amatica: ["Amatic SC", "cursive"],
+                    montserrat: ["Montserrat", "sans-serif"]
                 },
             },
     };
@@ -37,11 +42,11 @@
     <header class="header">
       <div>
         <nav id = "menu" class="text-white fixed w-full h-[9vh] bg-slate-800 flex justify-between items-center z-[9999] transition-[0.5s] hover:h-[10vh]">
-          <a class="text-3xl tracking-[4px] ml-[8%] font-Amatic SC, cursive hover:text-[#868686]" href="./index.html">LMCULT</a>
+          <a class="text-3xl tracking-[4px] ml-[8%] font-amatica hover:text-[#868686]" href="./index.html">LMCULT</a>
           <ul class="nav-list">
-            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="./listagem-tailwind.html   ">Gêneros</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="./listagem.html   ">Gêneros</a></li>
             <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
-            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="assista" href="./listagem-tailwind.html">Assista Agora</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="assista" href="./listagem.html">Assista Agora</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +58,7 @@
 
     <main>
       <section class="items-center justify-items-center text-center m-[25px]">
-        <a href="./listagem-tailwind.html" class="text-white text-xl bg-slate-900 p-[0.2em] border-solid border-[white] rounded-[1000px] border-[1.0px] md:p-[0.3em] hover:bg-slate-950 transition-[5s] ">DESTAQUES</a>
+        <a href="./listagem.html" class="text-white text-xl bg-slate-900 p-[0.2em] border-solid border-[white] rounded-[1000px] border-[1.0px] md:p-[0.3em] hover:bg-slate-950 transition-[5s] ">DESTAQUES</a>
       </section>
       
       <section id="movie-container" class="mx-[25px] mt-[2em] grid gap-4 grid-cols-3 sm:grid-cols-5 lg:grid-cols-5">
