@@ -28,10 +28,6 @@
     };
     </script>
     <style type="text/tailwindcss">
-        @media screen and (max-width: 769px)
-        {#assista {
-        @apply hidden;}}
-
       footer .footer-content > section {
         @apply basis-[calc(100%/3)] block;
         margin-block-start: 1em;}
@@ -46,7 +42,7 @@
           <ul class="nav-list">
             <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="./listagem.html   ">Gêneros</a></li>
             <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
-            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="assista" href="./listagem.html">Assista Agora</a></li>
+            <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686] hidden md, lg:inline" id="assista" href="./listagem.html">Assista Agora</a></li>
           </ul>
         </nav>
       </div>
