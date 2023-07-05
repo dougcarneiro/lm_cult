@@ -4,108 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/filme.css"/>
+    <link rel="stylesheet" href="./styles/icons.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/fonts.css" rel="stylesheet"/>
     <link rel="icon" href="./images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  backgroundColor: {
+                      'overlay-grid': 'rgba(23, 23, 31, 0.7)',
+                      'rgb-23-23-31': 'rgb(23, 23, 31)',
+                      },
+                  
+              },
+          fontFamily: {
+              amatica: ["Amatic SC", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"]
+          },
+      },
+  };
+  </script>
     <title>LMCULT - Filme</title>
 </head>
-<body>
+<body id="search-container" class="bg-[#17171F]">
     <header class="header">
         <div>
-          <nav id="menu">
-            <a class="logo" href="./index.html">LMCULT</a>
+          <nav id = "menu" class="text-white fixed w-full h-[9vh] bg-slate-800 flex justify-between items-center z-[9999] transition-[0.5s] hover:h-[10vh]">
+            <a class="text-3xl tracking-[4px] ml-[8%] font-amatica hover:text-[#868686]" href="./index.html">LMCULT</a>
+            <section id="search-bar" class="mb-3 flex justify-center lg, max-[700px]:justify-end">
+              <div class="relative ml-4 mt-3 p-2 pl-5 pr-5 rounded-2xl border-2 border-transparent focus-within, hover:border-1 focus-within, hover:border-white">
+                  <div class="rounded-2x">
+                      <div class="flex">
+                          <input
+                          type="search"
+                          class="outline-none block w-auto min-w-30px bg-transparent font-montserrat text-white font-bold transition duration-200 ease-in-out focus:z-[3] focus:text-white"
+                          placeholder="Buscar por filme"
+                          aria-label="Buscar por filme"/>
+                          <button>
+                            <span class="material-symbols-outlined text-white text-3xl ml-3">
+                                search
+                            </span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+            </section id="search-bar">
             <ul class="nav-list">
-              <li><a id="generos" href="#">Gêneros</a></li>
-              <li><a id="user" href="#"><i class="fa-solid fa-user"></i> User</a></li>
+              <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="./listagem.html   ">Gêneros</a></li>
+              <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
+              <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686] hidden md, lg:inline" id="assista" href="./listagem.html">Assista Agora</a></li>
             </ul>
           </nav>
         </div>
       </header>
     <main>
-        <section class="search-container">
-            <section>
-                <form class="search-form">
-                    <input placeholder="Buscar por filme">
-                    <button>
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </button>                  
-                    </form>              
-            </section>
-        </section>
-        <div class="movie-container">
-            <div class="left-half">
-                <div class="movie-poster">
-                    <img class=background-image src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
+        <div id="movie-container" class="relative mb-33 flex   max-[700px]:h-auto max-[700px]:max-w-[100px] max-[700px]:mb-[15vw]">
+            <div id="left-half" class="flex-1 ml-5  max-[700px]:max-w-[100vw] max-[700px]:items-center  max-[700px]:ml-0">
+                <div id="movie-poster" class='flex justify-center left-0 top-0 overflow-x-none'>
+                    <img id=background-image class='w-screen hidden relative overflow-x-none  max-[700px]:block max-[700px]:mb-[10vw] max-[700px]:justify-end' src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
                 </div>
                 <section class="details"></section>
-                    <h3>Título (Ano) <a href="https://www.imdb.com/"><span class="imdb-icon"></span></a></h2>
-                    <h2>Classificação Indicativa: 13
+                    <h3 class="text-[#D9D9D9] text-[40px] ml-5 mt-[75px]   max-[700px]:text-[25px]">Título (Ano) <a href="https://www.imdb.com/"><span id="imdb-icon" class="content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d3ca78')] w-[75px] float-right mr-[5vw] hover:content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d9d9d9')]    max-[700px]:w-[12vw] max-[700px]:mr-[9vw]"></span></a></h2>
+                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Classificação Indicativa: 13
                     </h2>
-                    <h2>Duração: 2h19min
+                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Duração: 2h19min
                     </h2>
-                    <h2>Diretor: Stanley Kubrick
+                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Diretor: Stanley Kubrick
                     </h2>
-                    <h2>Elenco
-                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Elenco
+                        <p class="text-[#D9D9D9] text-xl   max-[700px]:text-[13px]">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     </h2>
-                    <h2>Sinopse
-                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Sinopse
+                        <p class="text-[#D9D9D9] text-xl   max-[700px]:text-[13px]">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     </h2>
-              <div class="table-container">
-                <section class="icons-table">
+              <div id="table-container" class="flex justify-items-center max-w-max bg-[#23232e] m-[5vw] p-5 left-0 top-0 overflow-x-none   max-[700px]:max-w-max max-[700px]:p-12">
+                <section id="icons-table" class="border-collapse">
+                  <div>
+                    <section class="texto items-center justify-items-center text-center">
+                      <p class="text-white text-2xl mb-5">Onde Assistir</p>
+                    </section>
+                  </div>
                   <table>
                     <tr>
-                      <td class="silver">STREAM</td>
-                      <td>
+                      <td id="silver" class="bg-[#D9D9D9] [writing-mode:vertical-lr] pt-3">STREAM</td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                         <a href="https://www.netflix.com">
-                          <span class="icons netflix-icon"></span>
+                          <span id="icons netflix-icon" class="content-[url('https://api.iconify.design/ri/netflix-fill.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/ri/netflix-fill.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                         </a></td>
                       
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                        <a href="https://www.hbomax.com">
-                        <span class="icons hbo-icon"></span>
+                        <span id="icons hbo-icon" class="content-[url('https://api.iconify.design/arcticons/hbo-max.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/arcticons/hbo-max.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                        </a>
                       </td>
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                         <a href="https://www.disneyplus.com">
-                          <span class="icons disney-plus-icon"></span>
+                          <span id="icons disney-plus-icon" class="content-[url('https://api.iconify.design/tabler/brand-disney.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/tabler/brand-disney.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                         </a>
                       </td>
                     </tr>
                     <tr>
-                      <td class="blue">ALUGAR</td>
-                      <td>
+                      <td id="blue" class="bg-[#050434] text-white [writing-mode:vertical-lr] pt-3">ALUGAR</td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                         <a href="https://www.appletv.com">
-                          <span class="icons apple-tv-icon"></span>
+                          <span id="icons apple-tv-icon" class="content-[url('https://api.iconify.design/simple-icons/appletv.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/simple-icons/appletv.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                         </a>
                       </td>
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://www.starplus.com">
-                        <span class="icons star-plus-icon"></span>
+                        <span id="icons star-plus-icon" class="content-[url('https://api.iconify.design/mdi/star-outline.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/mdi/star-outline.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                       </a>  
                       </td>
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://www.primevideo.com">
-                        <span class="icons prime-icon"></span>
+                        <span id="icons prime-icon" class="content-[url('https://api.iconify.design/arcticons/amazon-prime-video.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/arcticons/amazon-prime-video.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                       </a>  
                       </td>
                     </tr>
                     <tr>
-                      <td class="gold">COMPRAR</td>
-                      <td>
+                      <td id="gold" class="bg-[#D3CA78] [writing-mode:vertical-lr] pt-1.5">COMPRAR</td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://www.paramountplus.com">
-                        <span class="icons paramount-icon"></span>
+                        <span id="icons paramount-icon" class="content-[url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                       </a>  
                       </td>
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://www.youtube.com">
-                        <span class="icons youtube-icon"></span>
+                        <span id="icons youtube-icon" class="h-[45px] content-[url('https://api.iconify.design/fa/youtube.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/fa/youtube.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                       </a>  
                       </td>
-                      <td>
+                      <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://play.google.com/store/movies/">
-                        <span class="icons google-play-icon"></span>
+                        <span id="icons google-play-icon" class="content-[url('https://api.iconify.design/uim/google-play.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/uim/google-play.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
                       </a>  
                       </td>
                     </tr>
@@ -113,157 +145,190 @@
                 </section>
               </div>
             </div>
-            <div class="right-half">
-              <img src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
+            <div id="right-half" class="flex-[2] flex items-center justify-center relative before:absolute before:w-full before:h-full before:bg-[linear-gradient(to_right,rgb(23,23,31,0.9),transparent)] before:left-0 before:top-0    max-[700px]:hidden">
+              <img class="w-full h-full object-cover" src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
             </div>
           </div>
-          <div class="video-container">
-            <iframe class='trailer' src="https://www.youtube.com/embed/Iq4mNXiRKgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div>
+            <section class="texto items-center justify-items-center text-center mt-[25px]">
+              <p class="text-white text-4xl mb-[62px]">Trailer</p>
           </div>
-          <section class="image-grid">
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <div class="image-overlay">
-                    <div class="text-overlay">
-                      Em Busca do Ouro
-                    </div>
+          <div id="video-container" class="flex justify-center w-full h-full pb-[7vw] left-0 top-0    max-[700px]:pb-[15vw]">
+            <iframe id='trailer' class="w-[60vw] h-[37vw]    max-[700px]:w-[90vw] max-[700px]:h-[35vh] max-[700px]:self-center" src="https://www.youtube.com/embed/Iq4mNXiRKgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div>
+            <section class="texto items-center justify-items-center text-center mt-[25px]">
+              <p class="text-white text-4xl mt-10 mb-[62px]">Recomendados Para Você</p>
+            </section>
+          </div>
+          <section id="image-grid" class="grid gap-1 grid-cols-2 max-[700px]:grid-cols-3 lg:grid-cols-5">
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              Em Busca do Ouro
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </a>
-                <img src="./images/filmes/em_busca_do_ouro.jpg" alt="Em Busca do Ouro">
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/frankstein_noiva.jpg" alt="A Noiva do Frankenstein">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Noiva do Frankenstein
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/frankstein_noiva.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              A Noiva de Frankenstein
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/living_dead.jpg" alt="A Noite dos Mortos Vivos">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Noite dos Mortos Vivos
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/king_kong.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              King Kong
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/loja_dos_horrores.jpg" alt="A Loja dos Horrores">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Loja dos Horrores
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/loja_dos_horrores.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              A Loja dos Horrores
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/marca_do_zorro.jpg" alt="A Marca do Zorro">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Marca do Zorro
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/marca_do_zorro.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              A Marca do Zorro
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <div class="image-overlay">
-                    <div class="text-overlay">
-                      Nosferatu
-                    </div>
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/nosferatu.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              Nosferatu
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </a>
-                <img src="./images/filmes/nosferatu.jpg" alt="Nosferatu">
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <div class="image-overlay">
-                    <div class="text-overlay">
-                      Em Busca do Ouro
-                    </div>
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              Em Busca do Ouro
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </a>
-                <img src="./images/filmes/king_kong.jpg" alt="King Kong">
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/the_kid.jpg" alt="The Kid">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    The Kid
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/the_kid.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              The Kid
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/o_gabinete_do_dr_caligari.jpg" alt="O Gabinete do Dr. Caligari">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    O Gabinete do Dr. Caligar
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/o_gabinete_do_dr_caligari.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              O Gabinete do Dr. Caligari
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <div class="image-overlay">
-                    <div class="text-overlay">
-                      Em Busca do Ouro
-                    </div>
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/em_busca_do_ouro.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              Em Busca do Ouro
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </a>
-                <img src="./images/filmes/em_busca_do_ouro.jpg" alt="Em Busca do Ouro">
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/frankstein_noiva.jpg" alt="A Noiva do Frankenstein">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Noiva do Frankenstein
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/frankstein_noiva.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              A Noiva do Frankenstein
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="column">
-              <div class="image-container">
-                <a href="./filme.html">
-                  <img src="./images/filmes/living_dead.jpg" alt="A Noite dos Mortos Vivos">
-                <div class="image-overlay">
-                  <div class="text-overlay">
-                    A Noite dos Mortos Vivos
+            <div id="movie-card" class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat flex-auto group" data-te-ripple-init data-te-ripple-color="dark">
+              <img src="./images/filmes/living_dead.jpg" class="align-middle transition duration-300 ease-linear transform group-hover:scale-110">
+              <a href="./filme-tailwind.html">
+                  <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0)]">
+                      <div class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-overlay-grid">
+                          <div class="flex h-full items-end justify-center">
+                              <h5 class="m-6 text-lg font-montserrat font-bold text-white">
+                              A Noite dos Mortos Vivos
+                              </h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </a>
-              </div>
+              </a>
             </div>
           </section>    
     </main>
